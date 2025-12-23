@@ -3,15 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Put your name here -->
-   <title>Reigniell Bayani | Portfolio</title>
-    <link rel="icon" href="../favicon.ico" />
+    <title>Reigniell Ann L. Bayani | Computer Science Portfolio</title>
+    <!-- Favicon removed to prevent build errors -->
   </head>
 
   <body>
     <!-- **** Navigation **** -->
     <nav id="home" class="nav">
-      <!-- ... navigation code remains the same ... -->
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#hero" class="nav__link">Home</a></li>
+          <li class="nav__list-item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__list-item"><a href="#projects" class="nav__link">Projects & Webinars</a></li>
+          <li class="nav__list-item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <!-- /END Navigation -->
 
@@ -19,13 +25,13 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">[YOUR NAME]</span>
+          Hi, my name is <span class="text-color-main">Reigniell Ann L. Bayani</span>
           <br />
-          I'm a [YOUR TITLE, e.g., Computer Science Student].
+          I'm a Computer Science Student.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">
-            Learn more
+            Learn About My Journey
           </a>
         </p>
       </div>
@@ -35,38 +41,32 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
+        <h2 class="section-title load-hidden">About Me</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
-              <!-- REPLACE 'profile.jpg' with your actual photo filename -->
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-              />
+              <!-- Profile Image Temporarily Removed -->
+              <div style="width: 300px; height: 300px; background: #f0f0f0; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #888; font-style: italic;">
+                [Profile Picture]
+              </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
-              <!-- REPLACE these paragraphs with your bio -->
               <p class="about-wrapper__info-text">
-                [FIRST PARAGRAPH ABOUT YOURSELF. Example: I am a 4th-year Computer Science student at Laguna State Polytechnic University, specializing in Intelligent Systems. I am passionate about applying technical knowledge to solve real-world problems.]
+                I am a dedicated 4th Year BS Computer Science student at Laguna State Polytechnic University, specializing in Intelligent Systems. With consistent academic honors from Senior High School through University, I am committed to applying theoretical knowledge to practical, real-world challenges.
               </p>
               <p class="about-wrapper__info-text">
-                [SECOND PARAGRAPH. Example: My academic journey has been complemented by hands-on experience in web development and a strong interest in AI fundamentals. I am currently seeking an On-the-Job Training (OJT) position to further develop my skills.]
+                I am actively seeking an On-the-Job Training (OJT) opportunity to contribute as a Student Assistant, where I can support technical and clerical functions, aid academic activities, and gain invaluable hands-on industry experience to prepare for my future career.
               </p>
               <span class="d-flex mt-3">
-                <!-- REPLACE 'resume.pdf' with your actual resume filename -->
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
+                  href="#"
                 >
-                  View Resume
+                  View Resume (Available on Request)
                 </a>
               </span>
             </div>
@@ -76,104 +76,76 @@
     </section>
     <!-- /END About Section -->
 
-    <!-- **** Projects Section **** -->
+    <!-- **** Projects & Webinars Section **** -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title dark-blue-text">Projects & Professional Development</h2>
 
-          <!-- Project 1 -->
+          <!-- Project 1: Portfolio Website -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">[PROJECT 1 TITLE]</h3>
+                <h3 class="project-wrapper__text-title">Interactive Portfolio Website</h3>
                 <div>
                   <p class="mb-4">
-                    [PROJECT 1 DESCRIPTION. Briefly describe what it does, the technologies used (e.g., HTML, CSS, React), and its purpose.]
+                    A responsive portfolio built with HTML, CSS, and JavaScript using the simplefolio template. This project demonstrates front-end development skills and serves as a professional platform to showcase my academic journey and skills for OJT applications.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="[LIVE DEMO LINK FOR PROJECT 1]"
+                  href="https://github.com/reigniell"
                 >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="[GITHUB REPO LINK FOR PROJECT 1]"
-                >
-                  Source Code
+                  View GitHub
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="[LIVE DEMO LINK]" target="_blank">
-                  <!-- REPLACE 'project1.jpg' with your project image -->
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project1.jpg"
-                    />
+                  <!-- Project Image Placeholder -->
+                  <div style="width: 100%; height: 300px; background: #e9e9e9; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #888; font-style: italic;">
+                    [Portfolio Screenshot]
                   </div>
-                </a>
               </div>
             </div>
           </div>
           <!-- /END Project 1 -->
 
-          <!-- Project 2 -->
+          <!-- Webinar: VTMS -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">[PROJECT 2 TITLE]</h3>
+                <h3 class="project-wrapper__text-title">Vessel Traffic Management System</h3>
+                <h4 class="project-wrapper__text-subtitle">Subic Bay Metropolitan Authority | April 2024</h4>
                 <div>
                   <p class="mb-4">
-                    [PROJECT 2 DESCRIPTION.]
+                    Attended a technical seminar on large-scale maritime traffic control systems. Gained insights into the integration of radar, AIS, and communication technologies for port safety and efficiency, highlighting the application of complex systems in national security and trade.
                   </p>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="[LIVE DEMO LINK FOR PROJECT 2]"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="[GITHUB REPO LINK FOR PROJECT 2]"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="[LIVE DEMO LINK]" target="_blank">
-                  <img
-                    alt="Project Image"
-                    class="img-fluid"
-                    src="assets/project2.jpg"
-                  />
-                </a>
               </div>
             </div>
           </div>
-          <!-- /END Project 2 -->
+          <!-- /END Webinar 1 -->
+
+          <!-- Webinar: 14th EdukCircle -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">14th EdukCircle International Convention</h3>
+                <h4 class="project-wrapper__text-subtitle">UP Diliman | April 2023</h4>
+                <div>
+                  <p class="mb-4">
+                    Participated in an international convention focused on Engineering and Computer Technology. Engaged with discussions on emerging tech trends, research methodologies, and the future landscape of computing, broadening my academic and professional perspective.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Webinar 2 -->
+
+          <!-- Note: You can add more Project/Webinar rows here following the same pattern -->
         </div>
       </div>
     </section>
@@ -182,16 +154,16 @@
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Contact Me</h2>
         <div class="contact-wrapper load-hidden">
           <p class="contact-wrapper__text">
-            [A SHORT CALL-TO-ACTION. Example: Interested in offering an OJT opportunity? I'd love to hear from you!]
+            Interested in offering an OJT opportunity or discussing technology? I am eager to connect, learn, and contribute.
           </p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:[YOUR_EMAIL@gmail.com]"
+            href="mailto:reigniellannbayani@gmail.com"
             >Email Me</a
           >
         </div>
@@ -206,21 +178,16 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <!-- Update these links with your actual profiles -->
-          <a rel="noreferrer" href="[YOUR GITHUB LINK]" target="_blank">
+          <a rel="noreferrer" href="https://github.com/reigniell" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="[YOUR LINKEDIN LINK]" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="mailto:[YOUR EMAIL]" target="_blank">
+          <a rel="noreferrer" href="mailto:reigniellannbayani@gmail.com" target="_blank">
             <i class="fa fa-envelope fa-inverse"></i>
           </a>
         </div>
         <hr />
         <p class="footer__text">
-          © [CURRENT_YEAR, e.g., 2025] - Portfolio by
-          <a rel="noreferrer" href="#top">[YOUR NAME]</a>
+          © 2025 - Portfolio of Reigniell Ann L. Bayani
         </p>
       </div>
     </footer>
